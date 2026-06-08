@@ -1,0 +1,137 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#070707;
+font-family:'Inter';
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 8%;
+position:relative;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at center,
+rgba(0,229,255,.15),
+transparent 60%);
+}
+
+.hero h1{
+font-family:'Bebas Neue';
+font-size:9rem;
+line-height:.9;
+letter-spacing:3px;
+}
+
+.hero p{
+max-width:500px;
+opacity:.7;
+margin:25px 0;
+}
+
+button{
+padding:16px 32px;
+border:none;
+background:#00e5ff;
+font-weight:700;
+cursor:pointer;
+}
+
+.hero img{
+max-height:700px;
+}
+
+.track{
+padding:140px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.track h2{
+font-size:4rem;
+margin:15px 0;
+}
+
+.track-image img{
+width:100%;
+}
+
+.courses{
+padding:140px 8%;
+}
+
+.courses h2{
+font-size:5rem;
+margin-bottom:50px;
+}
+
+.course-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.course-card{
+height:500px;
+padding:40px;
+position:relative;
+border:1px solid rgba(255,255,255,.1);
+overflow:hidden;
+}
+
+.beginner{
+border-color:#00e5ff;
+}
+
+.intermediate{
+border-color:#ffe600;
+}
+
+.pro{
+border-color:#ff0037;
+}
+
+.course-card h3{
+font-size:3rem;
+margin-top:30px;
+}
+
+.benefits{
+padding:140px 8%;
+}
+
+.benefits-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:60px;
+}
+
+.benefit{
+padding:50px;
+background:#101010;
+border:1px solid rgba(0,229,255,.2);
+border-radius:20px;
+transition:.3s;
+}
+
+.benefit:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(0,229,255,.25);
+}
